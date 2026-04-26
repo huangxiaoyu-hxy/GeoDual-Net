@@ -56,7 +56,7 @@ python create_npz3_RGB.py
 ```
 ## 🚀 Training & Evaluation
 
-Train from scratch
+**Train from scratch**
 To train the GeoDual-Net model, use train.py as the main entry point:
 
 ```bash
@@ -74,7 +74,8 @@ To run evaluation on the respective ISPRS test sets:
 ```bash
 # For ISPRS Potsdam Dataset
 python test/testGeoDualNetP.py
-
+```
+```bash
 # For ISPRS Vaihingen Dataset
 python test/testGeoDualNetV.py
 ```
@@ -82,8 +83,8 @@ python test/testGeoDualNetV.py
 
 For reproducibility, the pre-trained best weights for GeoDual-Net can be accessed directly from this repository:
 
-- **ISPRS Potsdam Dataset**: `weights/potsdam/RGBepoch_150.pth`
-- **ISPRS Vaihingen Dataset**: `weights/vaihingen/RGBepoch_150.pth`
+- **ISPRS Potsdam Dataset**: [RGBepoch_150.pth (Potsdam)](https://github.com/huangxiaoyu-hxy/GeoDual-Net/blob/main/GeoDual-Net/weights/Res16_DualDecoder_Pots_256_256/RGBepoch_150.pth)
+- **ISPRS Vaihingen Dataset**: [RGBepoch_150.pth (Vaihingen)](https://github.com/huangxiaoyu-hxy/GeoDual-Net/blob/main/GeoDual-Net/weights/Res16_DualDecoder_Vai_256_256/RGBepoch_150.pth)
 
 Ensure these `.pth` files are placed in the correct subdirectories under the `weights/` folder before running the test scripts.
 
@@ -91,10 +92,12 @@ Ensure these `.pth` files are placed in the correct subdirectories under the `we
 
 If you find this repository or our work useful, please consider citing our paper:
 
+```bibtex
 @article{huang2026geodualnet,
     title={GeoDual-Net: A Lightweight Heterogeneous Dual-Decoder for Geospatial Image Segmentation},
     author={Huang, Xiaoyu and Wang, Yonggui and Zhang, Junming and Ai, Qiang},
     journal={Computers & Geosciences},
     year={2026},
     note={Submitted}
+```
 }
